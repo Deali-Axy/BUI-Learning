@@ -3,27 +3,49 @@
     <header class="bui-bar">
         <div class="bui-bar-left">
             <!-- 左边有图标示例 -->
-            <div class="bui-btn btn-back"><i class="icon-back"></i></div>
+            <div class="bui-btn"><i class="icon-menu"></i></div>
         </div>
         <div class="bui-bar-main">BUI Learning</div>
-        <div class="bui-bar-right">
-            <!-- 右边有图标示例 -->
-            <div class="bui-btn"><i class="icon-search"></i></div>
-        </div>
+        <div class="bui-bar-right"></div>
     </header>
     <main>
-        <!-- 中间内容 -->
+        <div id="tabDynamic" class="bui-tab">
+            <div class="bui-tab-main">
+                <ul>
+                    <li>
+                        <!-- 首页 -->
+                    </li>
+                    <li>
+                        <!-- 消息tab -->
+                    </li>
+                    <li>
+                        <!-- 发现tab -->
+                    </li>
+                    <li>
+                        <!-- 我tab -->
+                    </li>
+                </ul>
+
+            </div>
+        </div>
     </main>
     <footer>
-        <!-- 底部内容 -->
-        <ul class="bui-nav">
-            <li class="bui-btn bui-box-vertical">
-                <i class="icon-home"></i>
-                <div class="span1">文本</div>
+        <ul id="tabDynamicNav" class="bui-nav">
+            <li class="bui-btn bui-box-vertical active" href="pages/main/home.html">
+                <i class="material-icons-sm">home<span class="bui-badges">9</span></i>
+                <div class="span1">首页</div>
             </li>
-            <li class="bui-btn bui-box-vertical">
-                <i class="icon-home"></i>
-                <div class="span1">文本</div>
+            <li class="bui-btn bui-box-vertical" href="pages/main/news.html">
+                <i class="material-icons-sm">chat<span class="bui-badges">9</span></i>
+                <div class="span1">消息</div>
+            </li>
+            <li class="bui-btn bui-box-vertical" href="pages/main/photo.html">
+                <i class="material-icons-sm">search<span class="bui-badges"></span></i>
+                <div class="span1">发现</div>
+            </li>
+            <li class="bui-btn bui-box-vertical" href="pages/main/setting.html">
+                <i class="material-icons-sm">person</i>
+                <div class="span1">我</div>
             </li>
         </ul>
     </footer>
